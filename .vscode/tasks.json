@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "taskName": "ngServe",
+        "type": "shell",
+        "reveal": "always",
+        "panel": "dedicated",
+        "command": "ng serve --open",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      },
+      {
+        "taskName": "ngTest",
+        "type": "shell",
+        "reveal": "always",
+        "panel": "dedicated",
+        "command": "ng test --code-coverage",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
